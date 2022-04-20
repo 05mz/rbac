@@ -4,9 +4,7 @@
 
 
 class Users:
-    """
-    It implements add user with roles in an in-memory DB.
-    """
+
 
     def __init__(self):
         super().__init__()
@@ -14,10 +12,7 @@ class Users:
         self.users = {}
 
     def addUser(self, user, roles=[]):
-        """
-        Add a user with role.
-        One user can have multiple roles.
-        """
+     
         # validation of role
         for role in roles:
             assert not role or role in self.roles
