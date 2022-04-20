@@ -4,19 +4,14 @@
 
 
 class Roles:
-    """
-    Implements add role and delete role functionalities.
-    """
-
+ 
     def __init__(self):
         super().__init__()
         # initialize roles
         self.roles = {}
 
     def addRole(self, role, actions=[]):
-        """
-        Add a role or append roles with action types.
-        """
+      
         # if not action_type provided to role
         if not actions:
             raise Exception("Invalid Action Type")
@@ -30,9 +25,7 @@ class Roles:
         self.roles[role].update(actions)
 
     def deleteRole(self, user, role):
-        """
-        Delete a role for user.
-        """
+     
         # validation of role
         assert not role or role in self.roles
 
